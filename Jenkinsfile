@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "jegr188/backend-django"
+        DOCKER_IMAGE = "davi2007ng/backend-django"
         DOCKER_TAG = "${BUILD_NUMBER}"
     }
 
     stages {
-        
+
         stage('1. Descarga de Código (Checkout)') {
             steps {
                 echo 'Descargando código desde el repositorio de GitHub...'
