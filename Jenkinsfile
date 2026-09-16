@@ -18,10 +18,8 @@ pipeline {
         stage('2. Pruebas Automatizadas (Testing)') {
             steps {
                 echo 'Ejecutando la suite de pruebas del Backend en Django...'
-                sh '''
-                    echo "Validando archivos del proyecto..."
-                    ls -la
-                '''
+                // CAMBIO PARA CAPTURA 5: Simulación de fallo controlado en etapa de Testing
+                sh 'exit 1'
             }
         }
 
