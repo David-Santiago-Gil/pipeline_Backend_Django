@@ -7,6 +7,7 @@ pipeline {
     }
 
     stages {
+        
         stage('1. Descarga de Código (Checkout)') {
             steps {
                 echo 'Descargando código desde el repositorio de GitHub...'
